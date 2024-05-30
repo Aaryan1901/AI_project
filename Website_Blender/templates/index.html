@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>User Input Form</title>
+  </head>
+  <body>
+    <h1>Enter Text to Create a Model in Blender</h1>
+    <form action="{{ url_for('submit') }}" method="post">
+      <label for="user_input">User Input:</label>
+      <input type="text" id="user_input" name="user_input" required>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
